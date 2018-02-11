@@ -26,7 +26,8 @@ namespace MvcMovie.Models
 						Title = "When Harry Met Sally",
 						ReleaseDate = DateTime.Parse("1989"),
 						Genre = "Romantic Comedy",
-						Pice = 7.99M
+						Pice = 7.99M,
+						Rating = "R"
 					},
 
 					new Movie
@@ -34,7 +35,8 @@ namespace MvcMovie.Models
 						Title = "Ghostbusters",
 						ReleaseDate = DateTime.Parse("1984"),
 						Genre = "Comedy",
-						Pice = 8.99M
+						Pice = 8.99M,
+						Rating = "R"
 					},
 
 					new Movie
@@ -42,7 +44,8 @@ namespace MvcMovie.Models
 						Title = "Ghostbusters 2",
 						ReleaseDate = DateTime.Parse("1986"),
 						Genre = "Comedy",
-						Pice = 9.99M
+						Pice = 9.99M,
+						Rating = "R"
 					},
 
 					new Movie
@@ -50,7 +53,8 @@ namespace MvcMovie.Models
 						Title = "Star Wars",
 						ReleaseDate = DateTime.Parse("1977"),
 						Genre = "Adventure",
-						Pice = 10.99M
+						Pice = 10.99M,
+						Rating = "PG"
 					}
 				);
 				context.SaveChanges();
