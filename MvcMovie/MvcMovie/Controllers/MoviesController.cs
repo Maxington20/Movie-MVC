@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MvcMovie.Models;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace MvcMovie.Controllers
 {
@@ -27,6 +26,7 @@ namespace MvcMovie.Controllers
 											select m.Genre;
 
 			var movies = from m in _context.Movie
+						 .OrderBy(x=> x.Title)
 						 select m;
 
 			//if (!String.IsNullOrEmpty(searchString))
